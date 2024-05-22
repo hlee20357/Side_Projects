@@ -1,0 +1,100 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fswiss\fcharset0 Helvetica-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red144\green1\blue18;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c63922\c8235\c8235;
+}
+\margl1440\margr1440\vieww28600\viewh15260\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Hello! \
+\
+Welcome to one of Henry\'92s coding projects. \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 This program is used to append a select number of base pairs at the end of guide sequences in order to reach the minimum number of nucleotides needed to order gblocks. \cb1 \strokec2 \
+\cb3 \strokec4 - If you are going to use IDT, then 30 base pairs will be appended to the end of the guide sequence. \cb1 \strokec2 \
+\cb3 \strokec4 - if you are going to use Twist Biosciences, then 200 base pairs will be appended to the end of the guide sequence. \cb1 \strokec2 \
+\
+\cb3 \strokec4 Note: Confirmed that filler sequence used for appending bases (whether it's 30 bp or 200 bp) do not contain BsaI overhangs. \cb1 \strokec2 \
+\
+\cb3 \strokec4 In addition, the guide sequences you are manipulating must have the Golden Gate cloning overhangs (BsaI overhangs) already.\cb1 \strokec2 \
+\cb3 \strokec4        \cb1 \strokec2 \
+\cb3 \strokec4 This program will \cb1 \strokec2 \
+\cb3 \strokec4 1. Ask if you are ordering from Twist Biosciences or IDT. \cb1 \strokec2 \
+\cb3 \strokec4 2. Ask if the .csv file you are working with is \cb1 \strokec2 \
+\cb3 \strokec4     - an unedited (raw) .csv file (such as a Geneious Prime exported .csv file but it'll work on a .csv file with least 3 columns with 2 of the column headers being "Name" and "Sequence" ) \cb1 \strokec2 \
+\cb3 \strokec4     - or an edited .csv file (which only has two columns with header names  "Name" and "Sequence").\cb1 \strokec2 \
+\
+\cb3 \strokec4     - NOTE: YOUR .csv file MUST BE a COMMA SEPARATED VALUES (.csv) file AND NOT A CSV UTF-8 (COMMA DELIMITED) (.csv) file\cb1 \strokec2 \
+\cb3 \strokec4     - NOTE: This issue will only appear when you are given an Excel doc and you are converting it into a .csv file. Geneious export files are saved in the right .csv format. \cb1 \strokec2 \
+\cb3 \strokec4 3. Ask the file path of the .csv file you want to manipulate. \cb1 \strokec2 \
+\cb3 \strokec4 4. Ask where you want to save your updated .csv file. \cb1 \strokec2 \
+\cb3 \strokec4     - You can choose to save the updated .csv file in the same folder as the .csv file you asked to manipulate in step 3\cb1 \strokec2 \
+\cb3 \strokec4     - Or you can choose to save the updated .csv file in a different file path. \cb1 \strokec2 \
+\cb3 \strokec4     - Your updated .csv file will contain your updated guide sequences.\cb1 \strokec2 \
+\cb3 \strokec4 5. At the end, the link to either IDT or Twist Biosciences will be printed on the screen so that you can immediately go to IDT or Twist Biosciences\cf0 \cb1 \strokec2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+INSTALLING PROGRAMS \
+\
+\
+\
+In order to use this program, you will need to have Python and Visual Studio Code. \
+\
+For Python, download it from https://www.python.org/downloads/\
+\
+For Visual Studio Code, https://code.visualstudio.com/download\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 BEFORE USING THIS PROGRAM\
+\
+This program is used when you have a .csv file with headers \'93Name\'94 and \'93Sequence\'94 (or more. If the .csv has >2 columns of the names I specified, then it\'92s considered an \'93unedited\'94 .csv file). \
+I made this program for the purpose of manipulating .csv files exported from Geneious Prime. \
+However, I later realized that it can work for .csv files not exported from Geneious Prime. It just needs to follow the guideline in the first sentence of this section (which I\'92ll describe more in-depth) \
+\
+- First row of .csv file contains the headers. The headers \'93Name\'94 and \'93Sequence\'94 (without quotations) should be in that row. If there are more header names than \'93Name\'94 and \'93Sequence,\'94 then the .csv file is considered \'93unedited\'94; otherwise, it\'92s considered \'93edited,\'94 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 - Following rows will contain your information. \
+	- Under the \'93Name\'94 header should be the names of the gblocks you want to order. \
+	- Under the \'93Sequence\'94 header should be the sequences of the gblocks you want to order \
+	- The corresponding name of the guide and its sequences are located in a row. \
+\
+\
+USING THE PROGRAM \
+\
+\
+Follow the prompts that are outputted in the terminal for the best outcome,\
+I\'92ve tried my best to account for any issues that may arise when using this program (e.g  inappropriate responses that don\'92t follow the prompts, wrong file path names, uploading the wrong file, etc)\
+I recently tested out the code before uploading to Github (which included following the prompts as well as trying to break the code), and I don\'92t see any issues currently. \
+If there are issues when trying to break the code, let me know. Otherwise, if you really need to use this program, follow the prompts accordingly. \
+\
+\
+\
+\
+AFTER USING THE PROGRAM\
+\
+\
+Your outputted csv file should be where you specified it to be. You can directly copy and paste the results for IDT gblock ordering or upload the outputted .csv file from this program for Twist Biosciences gblock ordering. \
+\
+\
+\
+If you have any questions, concerns, comments, etc., let Henry know! Thanks for using this program! \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b \cf0 FOR REFERENCE, I HAVE ADDED SAMPLE CSV FILES TO TEST THIS CODE ON, 
+\f0\b0 \
+}

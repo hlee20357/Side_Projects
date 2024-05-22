@@ -1,0 +1,8 @@
+Name,% GC,Accession,Common Name,Created,Created Date,Description,Genetic Code,Imported From: Filename,Imported From: Path,Modified,Molecular Weight (kDa),Molecule Type,Organism,Rough Temperature (°C),Sequence,Sequence Length,Sequence List Name,Size,Topology
+Guide1,54.00%,,,Sat Jan 28 00:00:00 PST 2023,Sat Jan 28 00:00:00 PST 2023,,Standard,Guide1.gb,,Sat Jan 28 00:00:00 PST 2023,38.547869999999975,DNA,.,86.26825396825396,AGCT,126,,4 KB,linear
+Guide2,54.00%,,,Sat Jan 28 00:00:00 PST 2023,Sat Jan 28 00:00:00 PST 2023,,Standard,Guide2.gb,,Sat Jan 28 00:00:00 PST 2023,38.55687999999998,DNA,.,86.26825396825396,GGGG,126,,4 KB,linear
+Guide3,54.00%,,,Sat Jan 28 00:00:00 PST 2023,Sat Jan 28 00:00:00 PST 2023,,Standard,Guide3.gb,,Sat Jan 28 00:00:00 PST 2023,38.59690999999997,DNA,.,86.26825396825396,CCCC,126,,4 KB,linear
+Guide4,52.40%,,,Sat Jan 28 00:00:00 PST 2023,Sat Jan 28 00:00:00 PST 2023,,Standard,Guide4.gb,,Sat Jan 28 00:00:00 PST 2023,38.577909999999974,DNA,.,85.61746031746031,AAAA,126,,4 KB,linear
+Guide5,51.60%,,,Sat Jan 28 00:00:00 PST 2023,Sat Jan 28 00:00:00 PST 2023,,Standard,Guide5.gb,,Sat Jan 28 00:00:00 PST 2023,38.58391999999997,DNA,.,85.29206349206349,TCGA,126,,4 KB,linear
+Guide6,51.60%,,,Sat Jan 28 00:00:00 PST 2023,Sat Jan 28 00:00:00 PST 2023,,Standard,Guide6.gb,,Sat Jan 28 00:00:00 PST 2023,38.55289999999998,DNA,.,85.29206349206349,GC,126,,4 KB,linear
+Guide7,52.40%,,,Sat Jan 28 00:00:00 PST 2023,Sat Jan 28 00:00:00 PST 2023,,Standard,Guide7.gb,,Sat Jan 28 00:00:00 PST 2023,38.56889999999997,DNA,.,85.61746031746031,AT,126,,4 KB,linear
