@@ -1,0 +1,7 @@
+Name,Target Position,Registered Name,Value 1 at 005ng,Value 2 at 005ng,Value 3 at 005ng,Value 4 at 005ng,Value 1 at 500ng,Value 2 at 500ng,Value 3 at 500ng,Value 4 at 500ng
+GUIDE_B,41,,54.183,46.028,46.296,51.99,43.497,41.884,,
+GUIDE_F,41,,40.715,38.071,44.564,,55.275,41.07,,
+,,,,,,,,,,
+Name,Registered Name,Average On-Target Editing Value at 005ng,Average On-Target Editing Value at 500ng
+GUIDE_B,,49.62425,42.6905
+GUIDE_F,,41.11666666666667,48.1725
