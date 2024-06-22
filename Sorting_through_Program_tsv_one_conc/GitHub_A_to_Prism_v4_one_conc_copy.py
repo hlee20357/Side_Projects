@@ -92,7 +92,7 @@ with open (tsv_to_csv, mode = 'r') as csv_file:
         if x != starting_edit_position:
             break 
         counter = counter+1
-        break
+        
 
 list_of_names_obtained = []
 dictionary = {}
